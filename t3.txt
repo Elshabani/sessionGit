@@ -1,0 +1,16 @@
+// شیء نمونه
+const orders = {
+    book: null,
+    pen: "قلم فشاری",
+    laptop: undefined,
+    notebook: "دفتر",
+    ruler: null
+};
+
+// حذف propertyها با مقادیر null و undefined
+const cleanedOrders = Object.fromEntries(
+    Object.entries(orders).filter(([key, value]) => value !== null && value !== undefined)
+);
+
+// نمایش شیء نهایی
+console.log(cleanedOrders); // { pen: 'قلم فشاری', notebook: 'دفتر' }

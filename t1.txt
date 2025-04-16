@@ -1,0 +1,24 @@
+for (let i = 3; i <= 5; i++) {
+  if (i === 3) {
+    console.log("جدول ضرب عدد 3");
+    for (let j = 1; j <= 10; j++) {
+      if (j !== 3) {
+        console.log(${i}x${j}=${i * j});
+      }
+    }
+  } else if (i === 4) {
+    console.log("جدول ضرب عدد 4");
+    for (let j = 1; j <= 10; j++) {
+      if (j !== 3) {
+        console.log(${i}x${j}=${i * j});
+      }
+    }
+  } else if (i === 5) {
+    console.log("جدول ضرب عدد 5");
+    for (let j = 1; j <= 10; j++) {
+      if (j !== 3) {
+        console.log(${i}x${j}=${i * j});
+      }
+    }
+  }
+}

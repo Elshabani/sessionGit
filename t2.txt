@@ -1,0 +1,35 @@
+// تعریف متغیر orders به عنوان شیء
+const orders = {
+    book: {
+        name: "کتاب برنامه نویسی",
+        model: "مدل 2023",
+        price: 50,
+        count: 2
+    },
+    pen: {
+        name: "قلم فشاری",
+        model: "مدل X",
+        price: 5,
+        count: 10
+    },
+    laptop: {
+        name: "لپ‌تاپ ایسوس",
+        model: "مدل 2022",
+        price: 800,
+        count: 1
+    }
+};
+
+// افزایش قیمت هر کدام به میزان 10 واحد
+for (let item in orders) {
+    orders[item].price += 10; // افزایش قیمت
+}
+
+// محاسبه مبلغ کل خرید
+let totalPrice = 0;
+for (let item in orders) {
+    totalPrice += orders[item].price * orders[item].count; // جمع قیمت‌ها
+}
+
+// نمایش مبلغ کل خرید
+console.log(مبلغ کل خرید: ${totalPrice} واحد);
