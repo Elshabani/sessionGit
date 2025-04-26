@@ -1,0 +1,18 @@
+ قطعه کدی بنویسید که عناصر سوم تا ششم یک آرایه را در هم ضرب کند
+
+function zaraye(ary) {
+  if (ary.length < 6) {
+    return "araye bayad 6 onsor dashte bashad :"
+  }
+  let p = 1;
+  for (let i = 2; i <= 5; i++) { 
+    p *= ary[i];
+  }
+  return p;
+} 
+let m = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let natije = zaraye(m);
+console.log("zarb 3 ta 6: " + natije); 
+let s = [1, 2, 3, 4];
+let natije2 = zaraye(s);
+console.log(natije2); 

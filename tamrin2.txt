@@ -1,0 +1,12 @@
+ قطعه كدى بنویسید که عناصر یک آرایه را با هم جمع کند
+
+function suma(ary) {
+  let sum = 0;
+  for (let i = 0; i < ary.length; i++) {
+    sum += ary[i];
+  }
+  return sum;
+}
+let m = [1, 2, 3, 4, 5];
+let t = suma(m);
+console.log("  sum: " + t); 

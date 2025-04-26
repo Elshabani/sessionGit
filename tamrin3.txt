@@ -1,0 +1,13 @@
+
+ قطعه کدی بنویسید فیبوناچی یک عدد را به صورت آرایه ذخیره و نمایش دهد
+
+function faraye(ary) {
+  const fib = [0, 1];
+  for (let i = 2; i < ary; i++) {
+    fib[i] = fib[i - 1] + fib[i - 2];
+  }
+  return fib;
+}
+let ary = 10;
+let f = faraye(n);
+console.log(f); 
