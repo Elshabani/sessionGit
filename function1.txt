@@ -1,0 +1,12 @@
+تابعی بنویس که آرایه ای از اعداد را گرفته و میانگین آنها را برگرداند
+function c(num) {
+  if (num.length === 0) {
+    return 0; 
+  }
+  const sum = num.reduce((a, b) => a + b, 0);
+  const avg = sum / num.length;
+  return avg;
+}
+const num = [1, 2, 3, 4, 5];
+const avg = c(num);
+console.log(avg);

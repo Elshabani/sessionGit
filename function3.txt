@@ -1,0 +1,11 @@
+تابعی که یک رشته بگیرد و معکوس آن را برگرداند بدون استفاده از .()reverse
+function r(str) {
+  let strs = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    strs += str[i];
+  }
+  return strs;
+}
+const string = "elham ";
+const d = r(string);
+console.log(d);  

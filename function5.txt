@@ -1,0 +1,8 @@
+تابعی بنویسید که دو آبجکت به عنوان ورودی دریافت و آبجکت دوم را به طور کامل در آبجکت اول ادغام کند. به صورت ساده
+function m(obj1, obj2) {
+  return { ...obj1, ...obj2 };
+}
+const obj1 = { a: 1, b: 2 };
+const obj2 = { c: 3, d: 4 };
+const e = m(obj1, obj2);
+console.log(e); 

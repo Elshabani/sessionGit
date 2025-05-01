@@ -1,0 +1,11 @@
+تابعی بنویسید که یک آبجکت به عنوان ورودی دریافت کند و کلیدها و مقادیر آن را جا به جا کند
+function sw(obj) {
+  return Object.fromEntries(Object.entries(obj).map(([key, value]) => [value, key]));
+}
+const mobj = {
+  name: "eli",
+  age: 22,
+  city: "mshad"
+};
+const s = sw(mobj);
+console.log(s); 

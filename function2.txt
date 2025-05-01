@@ -1,0 +1,16 @@
+تابعی که آرایه ای از اعداد را گرفته و بزرگترین عدد را پیدا کند بدون استفاده از Math.max
+function f(num) {
+  if (num.length === 0) {
+    return undefined; 
+  }
+  let max = num[0]; 
+  for (let i = 1; i < num.length; i++) {
+    if (num[i] > max) {
+      max = num[i]; 
+    }
+  }
+  return max;
+}
+const num = [5, 2, 9, 1, 5, 6];
+const max = f(num);
+console.log(max); 
